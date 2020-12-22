@@ -1,0 +1,129 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+main {
+  background-color: orange;
+  height: 32rem;
+  width: 32rem;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.title {
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem 0;
+}
+
+.screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: greenyellow;
+  width: 20rem;
+  height: 5rem;
+  font-size: 2rem;
+  border-radius: .5rem;
+}
+
+.setTimer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+select {
+  width: 5rem;
+  height: 3rem;
+  font-size: 1.7rem;
+  padding-left: .5rem;
+  border: none;
+  background-color: ;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 1rem;
+}
+
+button {
+  border: 0.12rem solid #F8F8FF;
+  width: 9rem;
+  padding: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: .5rem;
+  font-size: 1.7rem;
+} 
+
+button:hover {
+  background-color: #98FB98;
+  border-color: #F8F8FF;
+  cursor: pointer;
+}
+
+.resetButton:hover {
+  background-color: #C0C0C0;
+}
+
+@media(min-width: 768px) {
+  main {
+    width: 50rem;
+    height: 50rem;
+    gap: 5rem 0;
+  }
+
+  .timer {
+    gap: 5rem 0;
+  }
+
+  .screen {
+    width: 25rem;
+  }
+
+  select {
+    width: 8rem;
+    height: 3.5rem;
+  }
+
+  .buttons {
+    gap: 0 2rem;
+  }
+
+  button {
+    width: 15rem;
+    padding: 1.5rem;
+  }
+}
