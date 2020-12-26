@@ -6,6 +6,7 @@ const selectMinutes = document.querySelector('.setTimerMinutes');
 const selectSeconds = document.querySelector('.setTimerSeconds');
 const startButton = document.querySelector('.startButton');
 const resetButton = document.querySelector('.resetButton');
+const audio = document.querySelector('audio')
 const runningTimer = 0;
 
 function addNumbersToSelect(maxNumber, selectField) {
@@ -36,9 +37,9 @@ function startTimer() {
       if(displayMinutes.textContent == -1) {
         displayHours.textContent -= 1;
         displayMinutes.textContent = 59;
-      }
-      
-    } if (displayHours.textContent == 0 && displayMinutes.textContent == 0 && displaySeconds.textContent == 0) {
+      } 
+    } if (displayHours.textContent == 0 && displayMinutes.textContent == 0 && displaySeconds.textContent == 0) 
+    {audio.play();
       clearInterval(runningTimer);     
     }
     document.querySelector('.hours').innerHTML =("0" + displayHours.textContent).slice (-2);
@@ -49,7 +50,7 @@ function startTimer() {
 
 
   resetButton.addEventListener('click', function () {
-    clearInterval(runningTimer);
+     clearInterval(runningTimer);
 
   document.querySelector('.hours').innerHTML = "00";
   document.querySelector('.minutes').innerHTML = "00";
