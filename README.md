@@ -1,6 +1,6 @@
 # Project
 
-# PjTimer
+## PjTimer
 ![](https://img.shields.io/github/repo-size/carlosogihara/PjTimer) ![](https://img.shields.io/github/last-commit/carlosogihara/PjTimer)
 
 PJTimer Web foi desenvolvido por mim, Antonio Ogihara, para fins de estudo e como parte da avaliação do curso “CS50’s Introduction to Computer Science”, ofertado na modalidade à distância pela Universidade de Harvard (EUA). No ensejo, vi a oportunidade de, além de aumentar o meu conhecimento e aplicá-lo em um projeto real, ajudar os usuários a organizarem seu tempo na execução de suas tarefas.
